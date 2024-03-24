@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Beltran's Portfolio</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav id="navibar" class="navbar navbar-expand-lg navbar-dark bg-black">
+    <a class="navbar-brand" href="#">
+        <img src="logonotext.png" width="50" height="30" class="d-inline-block align-top" alt="logo">
+        <strong>Beltran</strong>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<section id="Home" class="py-5 full-height text-center">
+    <div class="container d-flex justify-content-center align-items-center">
+        <div class="home-content">
+            <h1 class="stussy-font display-4">John Margo G. Beltran</h1>
+            <div class="status-animation">
+                <span class="status programmer">Student</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="About" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="profilepic.jpg" class="img-fluid mx-auto d-block img-medium" alt="Your Picture">
+            </div>
+            <div class="col-md-8">
+                <p>Growing up, I always dream of becoming a successful person, hoping that someday I will reach the destination I always wanted to be at. Pursuing something I love doing is what keeps me going even though sometimes it's difficult.</p>
+                <p>I'm just a regular guy with a passion for life and a heart full of gratitude. I strive to approach each day with positivity, kindness, and a sense of adventure. If you ever spot me around the City, don't hesitate to say hello—I'm always up for a friendly chat or a spontaneous adventure!</p>
+                <p>Skills:</p>
+                <div class="progress-group">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 30%;" aria-valuenow="30"
+                            aria-valuemin="0" aria-valuemax="100">HTML</div>
+                    </div>
+                </div>
+                <div class="progress-group">
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 20%;" aria-valuenow="20"
+                            aria-valuemin="0" aria-valuemax="100">CSS</div>
+                    </div>
+                </div>
+                <div class="progress-group">
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 15%;" aria-valuenow="15"
+                            aria-valuemin="0" aria-valuemax="100">JavaScript</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="Portfolio" class="py-5">
+    <div class="container">
+        <h2 class="text-center">Portfolio</h2>
+        <p class="text-center">More projects coming soon!</p>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="Contact" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <p class="text-center">Contact me using these socials:</p>
+        <div class="row justify-content-center">
+            <div class="col-md-3 text-center">
+                <i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>@jay.xem</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-phone fa-2x"></i>
+                <p>09971708272</p>
+            </div>
+            <div class="col-md-3 text-center">
+                <i class="fas fa-envelope fa-2x"></i>
+                <p>beltran.johngica@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>

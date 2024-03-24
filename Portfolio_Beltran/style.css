@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+.full-height {
+  height: 100vh;
+  overflow: hidden;
+}
+
+#Home {
+  background-image: url('HomeSection.gif');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  padding: 50px;
+}
+
+.status-animation {
+  display: inline-block;
+}
+
+.status-animation .status {
+  display: inline-block; 
+  opacity: 0;
+  animation: fadein 4s infinite; /
+}
+
+@keyframes fadein {
+  0%, 100% { opacity: 0; }
+  50% { opacity: 1; }
+}
+
+.img-medium {
+  width: 300px; 
+  border-radius: 0; 
+}
+
+.progress-group {
+  margin-bottom: 10px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.progress {
+  margin-bottom: 10px;
+}
+
+.stussy.font {
+    font-family: 'Limelight';
+    font-size: 3rem;
+}
